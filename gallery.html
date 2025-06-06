@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>갤러리</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🐱 & 🐶 갤러리</h1>
+    <nav class="navbar">
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="tab-buttons">
+      <button class="tab-button active" data-tab="cats">고양이</button>
+      <button class="tab-button" data-tab="dogs">강아지</button>
+    </div>
+
+    <section class="gallery" id="cats">
+      <img src="https://plus.unsplash.com/premium_photo-1667030474693-6d0632f97029?fm=jpg&q=60&w=3000" alt="고양이 1">
+      <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?fm=jpg&q=60&w=3000" alt="고양이 2">
+      <img src="https://images.unsplash.com/photo-1561948955-570b270e7c36?fm=jpg&q=60&w=3000" alt="고양이 3">
+    </section>
+
+    <section class="gallery hidden" id="dogs">
+      <img src="https://plus.unsplash.com/premium_photo-1676389281733-aaefab0e7907?fm=jpg&q=60&w=3000" alt="강아지 1">
+      <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=600" alt="강아지 2">
+      <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?fm=jpg&q=60&w=3000" alt="강아지 3">
+    </section>
+
+    <section class="about-section" id="about">
+      <h2>About</h2>
+      <p>‘동물 갤러리’는 귀여운 고양이와 강아지 사진을 한눈에 볼 수 있는 공간입니다.<br>
+      사람들에게 따뜻함과 힐링을 전하고자 만든 반응형 웹사이트입니다.</p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact</h2>
+      <p>동물 갤러리에 대한 피드백이나 제안이 있다면 아래 양식을 통해 남겨주세요.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="이름" required />
+        <input type="email" placeholder="이메일" required />
+        <textarea placeholder="메시지를 입력하세요" rows="4" required></textarea>
+        <button type="submit">보내기</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <footer>
+    <p>© 2025 My Pet Gallery</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
